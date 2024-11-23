@@ -3,10 +3,6 @@ extends Control
 @onready var window_blur: WindowBlur = WindowBlur.new()
 @onready var blur_toggle: Button = $BlurToggle
 
-# TODO
-# -[X] Ability to unblur
-# -[] Blur on windaube 10?
-
 func _ready() -> void:
 	print("Is transparency avail: ", DisplayServer.is_window_transparency_available())
 	get_viewport().transparent_bg = true
