@@ -38,17 +38,17 @@ window_blur.set_window_blur(hwnd, WindowBlur.AUTO)
 
 ### Windows 11
 
-- **WindowBlur.AUTO**: The default. Let the Desktop Window Manager (DWM) automatically decide the system-drawn backdrop material for this window. This applies the backdrop material just behind the default Win32 title bar. This behavior attempts to preserve maximum backwards compatibility. For this reason, the DWM might also decide to draw no backdrop material at all based on internal heuristics.
-- **WindowBlur.NONE**: Don't draw any system backdrop.
-- **WindowBlur.MICA**: Draw the backdrop material effect corresponding to a long-lived window behind the entire window bounds.
-- **WindowBlur.ACRYLIC**: Draw the backdrop material effect corresponding to a transient window behind the entire window bounds.
-- **WindowBlur.MICA_ALT**: Draw the backdrop material effect corresponding to a window with a tabbed title bar behind the entire window bounds.
+- `WindowBlur.AUTO`: The default. Let the Desktop Window Manager (DWM) automatically decide the system-drawn backdrop material for this window. This applies the backdrop material just behind the default Win32 title bar. This behavior attempts to preserve maximum backwards compatibility. For this reason, the DWM might also decide to draw no backdrop material at all based on internal heuristics.
+- `WindowBlur.NONE`: Don't draw any system backdrop.
+- `WindowBlur.MICA`: Draw the backdrop material effect corresponding to a long-lived window behind the entire window bounds.
+- `WindowBlur.ACRYLIC`: Draw the backdrop material effect corresponding to a transient window behind the entire window bounds.
+- `WindowBlur.MICA_ALT`: Draw the backdrop material effect corresponding to a window with a tabbed title bar behind the entire window bounds.
 
 See the [Windows docs](https://learn.microsoft.com/en-us/windows/win32/api/dwmapi/ne-dwmapi-dwm_systembackdrop_type) for more info.
 
 ### Windows 10
 
-Windows 10 doesn't support all these types (to me knowledge), so setting **MICA**, **ACRYLIC** or **MICA_ALT** will enable blur and **AUTO** or **NONE** will remove it.
+Windows 10 doesn't support all these types (to me knowledge), so setting `MICA`, `ACRYLIC` or `MICA_ALT` will enable blur and `AUTO` or `NONE` will remove it.
 
 ## How to compile
 
