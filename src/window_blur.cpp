@@ -60,8 +60,15 @@ void WindowBlur::set_window_blur(int window_handle, WindowBlur::BLUR_TYPE blur) 
 
         WINDOWCOMPOSITIONATTRIBDATA pwcad = {0};
         AccentPolicy accent = {0};
-        accent.AccentFlags = 0x20 | 0x40 | 0x80 | 0x100;
-        accent.AccentState = ACCENT_ENABLE_BLURBEHIND;
+
+        if (blur == MICA || blur == MICA_ALT || blur == ACRYLIC) {
+            accent.AccentFlags = 0x20 | 0x40 | 0x80 | 0x100;
+            accent.AccentState = ACCENT_ENABLE_BLURBEHIND;
+        }
+        else {
+            accent.AccentFlags = 0x20 | 0x40 | 0x80 | 0x100;
+            accent.AccentState = ACCENT_DISABLED;
+        }
 
         pwcad.Attrib = WCA_ACCENT_POLICY;
         pwcad.pvData = &accent;
@@ -75,7 +82,6 @@ void WindowBlur::set_window_blur(int window_handle, WindowBlur::BLUR_TYPE blur) 
             pSWCA(hwnd, &pwcad);
         }
         FreeLibrary(handle);
-
     }
 
     // Construct blurbehind struct to blur the entire area
