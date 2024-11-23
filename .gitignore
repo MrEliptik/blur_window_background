@@ -1,4 +1,6 @@
-demo/bin/*
+demo/bin/*.exp
+demo/bin/*.lib
+demo/bin/~*.dll
 *.obj
 .vscode/settings.json
 .sconsign.dblite
