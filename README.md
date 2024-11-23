@@ -1,8 +1,8 @@
-# Window Backgroud Blur
+# Window Background Blur
 
 This GDExtension lets you enable background blur on your window on Windows 10 and 11.
 
-![alt text](media/background_blur.jpg)
+![Background blur example](media/background_blur.jpg)
 
 If you wish to see it work on Mac and Linux, see [How to contribute](#how-to-contribute).
 
