@@ -1,0 +1,4 @@
+demo/bin/*
+*.obj
+.vscode/settings.json
+.sconsign.dblite
