@@ -48,7 +48,7 @@ See the [Windows docs](https://learn.microsoft.com/en-us/windows/win32/api/dwmap
 
 ### Windows 10
 
-Windows 10 doesn't support all these types (to me knowledge), so setting `MICA`, `ACRYLIC` or `MICA_ALT` will enable blur and `AUTO` or `NONE` will remove it.
+Windows 10 doesn't support all these types (to my knowledge), so setting `MICA`, `ACRYLIC` or `MICA_ALT` will enable blur and `AUTO` or `NONE` will remove it.
 
 ## How to compile
 
